@@ -29,10 +29,10 @@ public class TocHw3 {
 				JSONObject houseOBJ;
 				try {
 					houseOBJ = (JSONObject) toke.nextValue();
-					town = houseOBJ.getString("");
-					address = houseOBJ.getString("");
-					time = houseOBJ.getInt("");
-					price = houseOBJ.getInt("");
+					town = houseOBJ.getString("鄉鎮市區");
+					address = houseOBJ.getString("土地區段位置或建物區門牌");
+					time = houseOBJ.getInt("交易年月");
+					price = houseOBJ.getInt("總價元");
 					String patt_town=args[1];
 					Pattern pattern_town = Pattern.compile(patt_town);
 					Matcher match_town = pattern_town.matcher(town);
@@ -64,7 +64,5 @@ public class TocHw3 {
 		 * System.out.println("Match: "+match.group()); }
 		 */
 		in.close();
-
 	}
-
 }
