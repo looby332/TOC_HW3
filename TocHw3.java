@@ -1,3 +1,13 @@
+/****************************************************************************
+
+author: ¿à«a¦p
+date: 2014/6/24
+student ID: H34001123
+description: This homework is about parsing the house information by a URL 
+to find the specify "road , address ,total price , sale date". And then print
+the avg(total price) of this data.
+
+****************************************************************************/
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.io.*;
